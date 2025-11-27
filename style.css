@@ -235,20 +235,92 @@ background: #a0d826;
     font-family: 'Comfortaa';
     padding: 10px;
 }
+
 .comment-card p{
     font-size: 14px;
     font-family: 'Comfortaa';
     padding: 10px 20px;
     text-align: center;
 }
+
 .comment{
-    background: url(img/comment.png);
+    background-image: url("img/comment.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
     width: 327px;
     height: 161px;
-    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 .comment p{
     font-family: 'Comfortaa';
     font-size: 20px;
     max-width: 250px;
+    text-align: center;
+    padding: 10px;
+}
+
+footer{
+   background-color: #200153;
+   height: 110px;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   color: #FFF;
+}
+
+.footer-info p{
+   font-family: 'Comfortaa';
+   padding-bottom: 10px;
+}
+
+.footer-year p{
+   font-family: 'Comfortaa';
+   letter-spacing: 1.5px;
+}
+
+.footer-links a{
+   margin-right: 15px;
+}
+nav{
+   position: fixed;
+   top: 0;
+   width: 100%;
+   z-index: 10;
+}
+.fixed-menu{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex: 1;
+}
+.nav-links{
+   display: flex;
+   justify-content: center;
+   flex-grow: 1;
+   padding-right: 150px;
+}   
+.nav-link{
+   width: 112px;
+   height: 40px;
+   border-radius: 12px;
+   border: 2px solid #000;
+   background-color: #FFF;
+   text-decoration: none;
+   color: #000;
+   font-size: 20px;
+   font-family: 'Comfortaa';
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-right: 20px;
+}
+
+.logo{
+   color: #BBFF2C;
+   font-size: 80px;
+   padding-left: 50px;
 }
